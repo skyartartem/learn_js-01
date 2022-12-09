@@ -138,10 +138,3 @@ function getProduct(elem) {
   console.log("product", product);
   return product;
 }
-
-
-const test = document.querySelector(".test");
-test.addEventListener("click", onTest);
-function onTest(evt) {
-  console.log(evt.target);
-}
