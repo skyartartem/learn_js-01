@@ -15,7 +15,49 @@ const instruments = [
     id: 3,
     img: "https://static.dnipro-m.ua/cache/products/2023/catalog_origin_200763.jpg",
     name: "Рівень",
-    price: 2000,
+    price: 500,
+  },
+  {
+    id: 4,
+    img: "https://static.dnipro-m.ua/cache/products/992/thumb_182118.jpg",
+    name: "Шліфмашинка кутова",
+    price: 1530,
+  },
+  {
+    id: 5,
+    img: "https://static.dnipro-m.ua/cache/products/1240/thumb_222106.jpg",
+    name: "Циркулярна пила",
+    price: 2397,
+  },
+  {
+    id: 6,
+    img: "https://static.dnipro-m.ua/cache/products/2409/thumb_157273.jpg",
+    name: "Акамуляторна батарея",
+    price: 1149,
+  },
+  {
+    id: 7,
+    img: "https://static.dnipro-m.ua/cache/products/3035/thumb_181582.jpg",
+    name: "Маска зварника",
+    price: 498,
+  },
+  {
+    id: 8,
+    img: "https://static.dnipro-m.ua/cache/products/4879/thumb_222031.jpg",
+    name: "Дріль-шуруповерт",
+    price: 1497,
+  },
+  {
+    id: 9,
+    img: "https://static.dnipro-m.ua/cache/products/5455/thumb_225030.jpg",
+    name: "Дріль безударний",
+    price: 1395,
+  },
+  {
+    id: 10,
+    img: "https://static.dnipro-m.ua/cache/products/6387/thumb_202769.jpg",
+    name: "лазерний рівень",
+    price: 3819,
   },
 ];
 
@@ -26,8 +68,8 @@ const markup = instruments.reduce(
   (acc, { id, img, name, price }) =>
     acc +
     `<li data-product-id="${id}" class="js-item">
-                <img src="${img}" alt="${name}" width="150px">
-                <h2>Назва товару: ${name}</h2>
+                <img src="${img}" alt="${name}">
+                <h2>${name}</h2>
                 <p>Ціна: ${price}</p>
                 <div>
                     <button type="button" class="js-cart">Add to cart</button>
